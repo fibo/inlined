@@ -7,21 +7,20 @@ function inlined (callback) {
   }
 
   const module = require('module')
-  const origExtenstionsJS = module._extensions['.js']
-  module._extensions['.js'] = function (module, filename) {
-    var content = fs.readFileSync(filename, 'utf8')
+
+  const origExtensionsJS = module._extensions['.js']
+
+  module._extensions['.js'] = function (_module, filename) {
+    const content = fs.readFileSync(filename, 'utf8')
 
     if (content.length >= MAX_INLINED_SOURCE_SIZE) {
       throw new Error('Exceeded max-inlined-source-size: content length > ' + MAX_INLINED_SOURCE_SIZE + ' for file ' + filename)
     }
 
-    origExtenstionsJS(module, filename)
+    origExtensionsJS(_module, filename)
   }
 
   callback()
-
-  // Restore orig module JS extensions handler, play well with others.
-  module._extensions['.js'] = origExtenstionsJS
 }
 
 module.exports = inlined

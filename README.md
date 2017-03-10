@@ -41,8 +41,8 @@ require('inlined')(function () {
 
 // your index.js content
 
-// every *require* call inside this function will throw an exception
-// if its body lenght *max-inlined-source-size* number of chars
+// every *require* call will throw an exception if its
+// body lenght *max-inlined-source-size* number of chars
 
 })
 ```

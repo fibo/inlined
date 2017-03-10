@@ -1,5 +1,3 @@
-function lessThan600Chars () {
-  // this file has 69 chars
-}
+var lessThan600Chars = 'ok!'
 
 module.exports = lessThan600Chars

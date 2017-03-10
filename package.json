@@ -19,9 +19,10 @@
     "url": "git://github.com/fibo/inlined.git"
   },
   "keywords": [
-    "strict",
-    "use strict",
-    "strict mode"
+    "inline",
+    "inlined",
+    "optimization",
+    "optimized"
   ],
   "devDependencies": {
     "tape": "^4.2.0"

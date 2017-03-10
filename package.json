@@ -1,7 +1,7 @@
 {
   "name": "inlined",
   "description": "throws if some module body length exceeds *max-inlined-source-size* number of chars",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "homepage": "http://g14n.info/inlined",
   "author": {
     "name": "Gianluca Casati",

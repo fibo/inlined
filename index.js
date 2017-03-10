@@ -10,7 +10,6 @@ function inlined (callback) {
   const origExtenstionsJS = module._extensions['.js']
   module._extensions['.js'] = function (module, filename) {
     var content = fs.readFileSync(filename, 'utf8')
-  console.log(content.length)
 
     if (content.length >= MAX_INLINED_SOURCE_SIZE) {
       throw new Error('Exceeded max-inlined-source-size: content length > ' + MAX_INLINED_SOURCE_SIZE + ' for file ' + filename)

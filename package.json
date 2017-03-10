@@ -1,0 +1,29 @@
+{
+  "name": "inlined",
+  "description": "throws if some module body length exceeds *max-inlined-source-size* number of chars",
+  "version": "0.0.0",
+  "homepage": "http://g14n.info/inlined",
+  "author": {
+    "name": "Gianluca Casati",
+    "url": "http://g14n.info"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "browser": "browser.js",
+  "scripts": {
+    "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
+    "test": "tape test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fibo/inlined.git"
+  },
+  "keywords": [
+    "strict",
+    "use strict",
+    "strict mode"
+  ],
+  "devDependencies": {
+    "tape": "^4.2.0"
+  }
+}

@@ -2,7 +2,7 @@
 
 > throws if some module body length exceeds *max-inlined-source-size* number of chars
 
-[![NPM version](https://badge.fury.io/js/inlined.svg)](http://badge.fury.io/js/inlined) [![Build Status](https://travis-ci.org/fibo/inlined.svg?branch=master)](https://travis-ci.org/fibo/inlined.png?branch=master) [![Dependency Status](https://gemnasium.com/fibo/inlined.svg)](https://gemnasium.com/fibo/inlined)
+[![NPM version](https://badge.fury.io/js/inlined.svg)](http://badge.fury.io/js/inlined) [![Build Status](https://travis-ci.org/fibo/inlined.svg?branch=master)](https://travis-ci.org/fibo/inlined?branch=master) [![Dependency Status](https://gemnasium.com/fibo/inlined.svg)](https://gemnasium.com/fibo/inlined)
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 

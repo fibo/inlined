@@ -22,7 +22,10 @@
     "inline",
     "inlined",
     "optimization",
-    "optimized"
+    "optimized",
+    "performance",
+    "tuning",
+    "max_inlined_source_size"
   ],
   "devDependencies": {
     "tape": "^4.2.0"

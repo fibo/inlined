@@ -52,7 +52,7 @@ cannot be *inlined*.
 ## Usage
 
 **Please note that this package is intended to be used server side.**
-If used with [browserify] it is a [no op](https://github.com/fibo/inlined/blob/master/browser.js).
+If used with [browserify] it is a [no op].
 
 Suppose that the *main attribute* in your *package.json* is *index.js*.
 If you want that all the modules in your package have body length less
@@ -114,4 +114,6 @@ require('inlined')(function () {
 
 [MIT](http://g14n.info/mit-license)
 
+[browserify]: http://browserify.org/ "browserify"
+[no op]: https://github.com/fibo/inlined/blob/master/browser.js "browser.js"
 [optimization_article]: https://top.fse.guru/nodejs-a-quick-optimization-advice-7353b820c92e#.j8j89xyfk "NodeJS : A quick optimization advice"

@@ -51,6 +51,8 @@ cannot be *inlined*.
 
 ## Usage
 
+### Basic usage
+
 **Please note that this package is intended to be used server side.**
 If used with [browserify] it is a [no op].
 
@@ -59,15 +61,16 @@ If you want that all the modules in your package have body length less
 the *max_inlined_source_size* value, wrap your *index.js* this way
 
 ```javascript
-require('inlined')(function () {
+require('inlined')()(function () {
 
 // your index.js content
 
-// every *require* call will throw an exception if its
-// body lenght is greater than *max_inlined_source_size* number of chars
-
+// Every *require* call will throw an exception if its body lenght
+// is greater than *max_inlined_source_size* number of chars.
 })
 ```
+
+### Tuning `max_inlined_source_size`
 
 Optionally, you can pass the value of the max source size which defaults
 to 600. It is up to you to keep it in sync with the to the
@@ -83,11 +86,11 @@ Then your code should look like
 ```javascript
 const maxInlinedSourceSize = 800
 
-require('inlined')(function () {
+require('inlined')({ maxInlinedSourceSize })(function () {
 
 // your index.js content
 
-}, maxInlinedSourceSize)
+})
 ```
 
 In order to do tuning on this value and change it quickly to be able to
@@ -103,7 +106,7 @@ node --max_inlined_source_size=$MAX_INLINED_SOURCE_SIZE myscript.js
 Then your code will be something like
 
 ```javascript
-require('inlined')(function () {
+require('inlined')()(function () {
 
 // your index.js content
 
